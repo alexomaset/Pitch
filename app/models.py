@@ -9,8 +9,8 @@ from datetime import datetime
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-    # Passes in a user id to this function and the function queries
-    #  the database and gets a user's id as a response
+    
+  
 
 class User(UserMixin,db.Model):
     __tablename__ = 'users'
