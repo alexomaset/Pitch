@@ -12,31 +12,28 @@
 background-color:white; font-family:
 'Open Sans', sans-serif;">
 
-    <img src="../static/photos/pitch1.png" style="height:400px;width:400px";>
-
     <div class="container" id="index-container">
         <div class="row welcome">
-            <h1 id="title-home" style="font-size:100px; color: black;">One Minute Pitch</h1>
-            <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">One-Minute-Pitch
-
+            <h1 id="title-home" style="font-size:100px; color: rgb(0, 0, 0);">Pitch</h1><br>
                 <br>
-                <br>
-                <div class="jumbo" style="font-family: 'Oswald', sans-serif;">
-                <button type="button" class="btn btn-warning btn-lg" style="color: white;"><a href="auth/register">Register An Account</a></button>
-                <br>
-                <br>
-                <button type="button" class="btn btn-warning btn-lg text-white"><a href="auth/login">Sign In</a></button>
-                 <br>
-                <br>
-                <button type="button" class="btn btn-warning btn-lg"><a href="/pitch/new">Pitch Your Idea</a></button>
-                 <br>
-                <br>
-                <button type="button" class="btn btn-warning btn-lg"><a href="{{url_for('main.pitch_list')}}">View Pitches</a></button>
-                <br>
-                <br>
-</div>
-            </h3>
+            </div>
+                <div class="jumbotron" style="font-family: 'Oswald', sans-serif;">
+                    <div class="row">
+                        <div class="col-md-3">
+                <button type="button" class="btn btn-success btn-lg" style="color: white;"><a href="auth/register">Sign Up</a></button>
+                     </div>
+                     <div class="col-md-3">
+                <button type="button" class="btn btn-success btn-lg text-white"><a href="auth/login">Sign In</a></button>
+            </div>
+                <div class="col-md-3">
+                <button type="button" class="btn btn-success btn-lg"><a href="/pitch/new">New Pitch</a></button>
+            </div>
+                <div class="col-md-3">
+                <button type="button" class="btn btn-success btn-lg"><a href="{{url_for('main.pitch_list')}}">View Pitches</a></button>
+            </div>
         </div>
+            </h3>
+       
 
     </div>
 </div>
